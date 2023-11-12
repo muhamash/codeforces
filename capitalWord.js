@@ -1,4 +1,4 @@
-let string = [ 'a', 'p', 'P', 'L', 'e' ];
+let string = [ 'a', 'p', 'P', 'L', 'E' ];
 
 if ( string[ 0 ] >= 'A' && string[ 0 ] <= 'Z' )
     {
@@ -8,4 +8,4 @@ else
     {
     string[ 0 ] = string[ 0 ].toUpperCase();
     console.log( string );
-};
+}ine54rf
