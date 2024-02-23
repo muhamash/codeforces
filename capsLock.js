@@ -5,10 +5,19 @@ const rl = readline.createInterface({
 });
 
 const capsLock = (arg) => {
-    if (arg[0] === arg[0].toLowerCase() && arg[0] !== arg[0].toUpperCase()) {
-        console.log("lower");
-    } else {
-        console.log("upper");
+    // if (arg[0] === arg[0].toLowerCase() && arg[0] !== arg[0].toUpperCase()) {
+    //     // console.log(arg[i]);
+    //     arg = arg[ 0 ].toUpperCase() + arg.slice( 1 )
+    //     console.log(arg)
+// }
+    if ( /[a-z]/.test(arg[ 0 ]) )
+    {
+        arg = arg[ 0 ].toUpperCase() + arg.slice( 1 );
+        console.log(arg)
+    }
+    else
+    {
+        console.log(arg)
     }
 };
 
