@@ -4,12 +4,12 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const capsLock = ( arg ) =>
+const capitalWords = ( arg ) =>
 {
-    console.log( arg[ 0 ].toUpperCase() + arg.slice( 1 ).toLowerCase() );
+    console.log( arg[ 0 ].toUpperCase() + arg.slice( 1 ));
 };
 
 rl.question('', (arg) => {
-    capsLock(arg);
+    capitalWords(arg);
     rl.close();
 });
